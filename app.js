@@ -10,7 +10,7 @@ if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(
     (position) => {
       const { latitude, longitude } = position.coords;
-      map.setView([latitude, longitude], 15); // Set map center to user's location
+      map.setView([latitude, longitude], 17); // Set map center to user's location
 
       // Add marker to the map
       L.marker([latitude, longitude]).addTo(map).bindPopup("You are here!").openPopup();
