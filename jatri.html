@@ -29,12 +29,32 @@
       font-size: 18px;
       color: #555;
     }
+    #connection-status {
+        margin-top: 15px;
+    }
+    .form {
+        display: none;
+    }
+   
+
   </style>
 </head>
 <body>
   <h1>Live Location Tracker</h1>
   <div id="status">Getting your location...</div>
   <div id="map"></div>
+  <div id="connection-status" class="status">Checking internet connection...</div>
+  <button id="ok-button" class="hidden" disabled>OK</button>
+
+
+  <form id="train-form" class="form">
+    <label for="train-name">Train Name:</label>
+    <input type="text" id="train-name" name="trainName" required />
+    <label for="train-number">Train Number:</label>
+    <input type="text" id="train-number" name="trainNumber" required />
+    <button type="submit">Submit</button>
+  </form>
+  
   <script src="app.js"></script>
 </body>
 </html>
